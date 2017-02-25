@@ -26,13 +26,8 @@ import java.util.List;
 public class HttpXmlTest extends Activity{
 
     private TextView tv;
-<<<<<<< HEAD
     private Handler handler;
     private String url;
-=======
-    private String url="http://172.29.108.46:8080/JSONTest/girl.xml";
-    private Handler handler;
->>>>>>> 82c7082fdebe7aaf24de5f513d8167458924839c
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,15 +36,9 @@ public class HttpXmlTest extends Activity{
 
         tv= (TextView) findViewById(R.id.http_xml_test_textView);
         handler=new Handler();
-<<<<<<< HEAD
         url="http://172.29.108.46:8080/JSONTest/girl.xml";
 
         new GetXmlThread().start();
-
-=======
-
-        new GetXmlThread().start();
->>>>>>> 82c7082fdebe7aaf24de5f513d8167458924839c
     }
 
     class GetXmlThread extends Thread{
@@ -59,11 +48,8 @@ public class HttpXmlTest extends Activity{
         public void run() {
             try {
                 HttpURLConnection httpConn= (HttpURLConnection) new URL(url).openConnection();
-<<<<<<< HEAD
-                httpConn.setRequestMethod("GET");
-                httpConn.setReadTimeout(5000);
-=======
->>>>>>> 82c7082fdebe7aaf24de5f513d8167458924839c
+//                httpConn.setRequestMethod("GET");
+//                httpConn.setReadTimeout(5000);
                 InputStream in=httpConn.getInputStream();
                 XmlPullParserFactory factory=XmlPullParserFactory.newInstance();
                 XmlPullParser parser=factory.newPullParser();
@@ -73,8 +59,7 @@ public class HttpXmlTest extends Activity{
 
                 Girl girl=null;
                 while(eventType!=XmlPullParser.END_DOCUMENT){
-<<<<<<< HEAD
-                    Log.i(TAG,"while");
+//                    Log.i(TAG,"while");
                     String label=parser.getName();
 
                     switch (eventType){
@@ -91,34 +76,12 @@ public class HttpXmlTest extends Activity{
                             else if("school".equals(label)){
                                 girl.setSchool(parser.nextText());
                             }
-=======
-                    Log.i(TAG,"run()->while");
-                    String label=parser.getName();
-
-                    switch (eventType) {
-
-                        case XmlPullParser.START_TAG:
-                        if ("girl".equals(label)) {
-                            girl = new Girl();
-                        } else if ("name".equals(label)) {
-                            girl.setName(parser.nextText());
-                        } else if ("age".equals(label)) {
-                            girl.setAge(Integer.parseInt(parser.nextText()));
-                        } else if ("school".equals(label)) {
-                            girl.setSchool(parser.nextText());
-                        }
->>>>>>> 82c7082fdebe7aaf24de5f513d8167458924839c
                             break;
 
                         case XmlPullParser.END_TAG:
                             if("girl".equals(label) && girl!=null){
-<<<<<<< HEAD
-                            list.add(girl);
-                        }
-=======
                                 list.add(girl);
                             }
->>>>>>> 82c7082fdebe7aaf24de5f513d8167458924839c
                             break;
 
                         default:
@@ -126,6 +89,8 @@ public class HttpXmlTest extends Activity{
                     }
                     eventType=parser.next();
                 }
+                in.close();
+                httpConn.disconnect();
 
                 handler.post(new Runnable() {
                     @Override
@@ -139,11 +104,6 @@ public class HttpXmlTest extends Activity{
             } catch (XmlPullParserException e) {
                 e.printStackTrace();
             }
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 82c7082fdebe7aaf24de5f513d8167458924839c
         }
     }
 }

@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.example.administrator.httptest_2.JsonTest.JSONTest;
+import com.example.administrator.httptest_2.MutiThreadDownload.MutiThreadDownloadActivity;
 import com.example.administrator.httptest_2.xmlTest.HttpXmlTest;
 
 public class MainActivity extends AppCompatActivity {
@@ -38,9 +39,15 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.json_test_button:
                 startActivity(new Intent(MainActivity.this, JSONTest.class));
+                break;
 
             case R.id.http_xml_test:
                 startActivity(new Intent(MainActivity.this, HttpXmlTest.class));
+                break;
+
+            case R.id.mutidownload_button_1:
+                startActivity(new Intent(MainActivity.this, MutiThreadDownloadActivity.class));
+                break;
 
             default:
                 break;

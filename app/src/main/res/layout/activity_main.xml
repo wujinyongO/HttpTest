@@ -84,7 +84,7 @@
 
     <Button
         android:text="MutiThreadDownload"
-        android:onClick="onClik"
+        android:onClick="onClick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/http_xml_test"
