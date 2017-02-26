@@ -27,6 +27,7 @@
         <activity android:name=".JsonTest.JSONTest"/>
         <activity android:name=".xmlTest.HttpXmlTest"/>
         <activity android:name=".MutiThreadDownload.MutiThreadDownloadActivity"/>
+        <activity android:name=".UpLoadImage.UploadImageActivity"/>
 
     </application>
 

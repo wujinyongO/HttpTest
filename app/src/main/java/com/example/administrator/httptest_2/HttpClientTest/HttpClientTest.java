@@ -9,7 +9,13 @@ import android.widget.ProgressBar;
 
 import com.example.administrator.httptest_2.R;
 
+import org.apache.http.client.HttpClient;
+import org.apache.http.impl.client.DefaultHttpClient;
+
 /**
+ * error!!错误!!
+ * 这个httpClient错的,因为从targetSdkVersion 23开始，
+ * google就抛弃HttpClient，推荐使用HttpUrlConnection
  * Created by cielwu on 2017/2/22.
  */
 
@@ -45,7 +51,7 @@ public class HttpClientTest extends Activity {
         }
 
         private void doHttpClientGet(){
-
+            HttpClient asd=new DefaultHttpClient();
         }
     }
 }

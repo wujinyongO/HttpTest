@@ -11,6 +11,7 @@ import com.example.administrator.httptest_2.HttpToGetAndPost.Http_Get_and_Post_T
 import com.example.administrator.httptest_2.HttpToLoadWebView.LoadWebView;
 import com.example.administrator.httptest_2.JsonTest.JSONTest;
 import com.example.administrator.httptest_2.MutiThreadDownload.MutiThreadDownloadActivity;
+import com.example.administrator.httptest_2.UpLoadImage.UploadImageActivity;
 import com.example.administrator.httptest_2.xmlTest.HttpXmlTest;
 
 public class MainActivity extends AppCompatActivity {
@@ -51,6 +52,10 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.mutidownload_button_1:
                 startActivity(new Intent(MainActivity.this, MutiThreadDownloadActivity.class));
+                break;
+
+            case R.id.upLoadImage_Button_1:
+                startActivity(new Intent(MainActivity.this, UploadImageActivity.class));
                 break;
 
             default:
