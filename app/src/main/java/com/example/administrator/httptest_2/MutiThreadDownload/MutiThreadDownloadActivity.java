@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import com.example.administrator.httptest_2.R;
 
@@ -30,6 +31,7 @@ public class MutiThreadDownloadActivity extends Activity{
                 count+=msg.arg1;
                 if(count==MutiThreadDownload.NumberOfSubThread){
                     progressBar.setVisibility(View.GONE);
+                    Toast.makeText(MutiThreadDownloadActivity.this,"Download finish",Toast.LENGTH_SHORT).show();
                 }
             }
         }

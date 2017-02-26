@@ -45,7 +45,7 @@ public class Http_Get_and_Post_Test extends Activity {
         bt= (Button) findViewById(R.id.submit);
         progressBar= (ProgressBar) findViewById(R.id.progressBar);
         handler=new Handler();
-        url="http://192.168.1.101:8080/test2/MyServlet";
+        url="http://172.29.108.46:8080/test2/MyServlet";
 
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,10 +59,9 @@ public class Http_Get_and_Post_Test extends Activity {
 
     class MyThread extends Thread{
 
-        public static final String TAG="Http_Get_and_Post_Test->MyThread";
+        public static final String TAG="Http_Get_and_Post_Test";
 
         String url1,name1,age1;
-        Button bt;
         Handler handler1;
 
         public MyThread(String url,String name,String age,Handler handler){
@@ -74,8 +73,8 @@ public class Http_Get_and_Post_Test extends Activity {
 
         @Override
         public void run() {
-//            doGet();
-            doPost();
+            doGet();
+//            doPost();
         }
 
         private void doPost(){
@@ -120,7 +119,7 @@ public class Http_Get_and_Post_Test extends Activity {
             });
         }
 
-        private void doGet() throws UnsupportedEncodingException {
+        private void doGet() {
 
             Log.i(TAG,"doGet()");
             handler1.post(new Runnable() {
@@ -130,7 +129,7 @@ public class Http_Get_and_Post_Test extends Activity {
                 }
             });
 
-            url1=url1+"?name="+ URLEncoder.encode(name1,"utf-8")+"&age="+age1;
+            url1=url1+"?name="+name1+"&age="+age1;
             Log.i(TAG,"url1="+url1);
 
             try {

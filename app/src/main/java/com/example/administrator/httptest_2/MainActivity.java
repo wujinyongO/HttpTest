@@ -5,6 +5,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.example.administrator.httptest_2.HttpClientTest.HttpClientTest;
+import com.example.administrator.httptest_2.HttpToDownloadImage.DownloadImage;
+import com.example.administrator.httptest_2.HttpToGetAndPost.Http_Get_and_Post_Test;
+import com.example.administrator.httptest_2.HttpToLoadWebView.LoadWebView;
 import com.example.administrator.httptest_2.JsonTest.JSONTest;
 import com.example.administrator.httptest_2.MutiThreadDownload.MutiThreadDownloadActivity;
 import com.example.administrator.httptest_2.xmlTest.HttpXmlTest;

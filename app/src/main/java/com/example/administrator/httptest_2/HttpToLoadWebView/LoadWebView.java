@@ -6,7 +6,6 @@ import android.os.Handler;
 import android.webkit.WebView;
 import android.widget.ProgressBar;
 
-import com.example.administrator.httptest_2.Http_WebView_Test;
 import com.example.administrator.httptest_2.R;
 
 /**

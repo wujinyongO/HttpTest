@@ -20,10 +20,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".LoadWebView"/>
-        <activity android:name=".DownloadImage"/>
-        <activity android:name=".Http_Get_and_Post_Test"/>
-        <activity android:name=".HttpClientTest"/>
+        <activity android:name=".HttpToLoadWebView.LoadWebView"/>
+        <activity android:name=".HttpToDownloadImage.DownloadImage"/>
+        <activity android:name=".HttpToGetAndPost.Http_Get_and_Post_Test"/>
+        <activity android:name=".HttpClientTest.HttpClientTest"/>
         <activity android:name=".JsonTest.JSONTest"/>
         <activity android:name=".xmlTest.HttpXmlTest"/>
         <activity android:name=".MutiThreadDownload.MutiThreadDownloadActivity"/>
