@@ -1,4 +1,4 @@
-package com.example.administrator.httptest_2;
+package com.example.administrator.httptest_2.HttpClientTest;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.os.Handler;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+
+import com.example.administrator.httptest_2.R;
 
 /**
  * Created by cielwu on 2017/2/22.

@@ -1,4 +1,4 @@
-package com.example.administrator.httptest_2;
+package com.example.administrator.httptest_2.HttpToGetAndPost;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.example.administrator.httptest_2.R;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -19,8 +21,6 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
-
-import static android.R.attr.onClick;
 
 /**
  * Created by cielwu on 2017/2/21.

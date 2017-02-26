@@ -1,4 +1,4 @@
-package com.example.administrator.httptest_2;
+package com.example.administrator.httptest_2.HttpToDownloadImage;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

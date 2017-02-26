@@ -1,10 +1,13 @@
-package com.example.administrator.httptest_2;
+package com.example.administrator.httptest_2.HttpToLoadWebView;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.webkit.WebView;
 import android.widget.ProgressBar;
+
+import com.example.administrator.httptest_2.Http_WebView_Test;
+import com.example.administrator.httptest_2.R;
 
 /**
  * Created by cielwu on 2017/2/20.
