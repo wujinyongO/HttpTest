@@ -249,7 +249,7 @@ public class JSONTest extends Activity {
             Person person=personList_2.get(position);
             viewHolder.name.setText("name: "+person.getName());
             viewHolder.age.setText("age: "+person.getAge());
-            List<SchoolInfo> schoolInfoList=new ArrayList<SchoolInfo>();
+            List<SchoolInfo> schoolInfoList;
             schoolInfoList=person.getSchoolInfoList();
             viewHolder.school1.setText("school1: "+schoolInfoList.get(0).getSchool());
             viewHolder.school2.setText("school2: "+schoolInfoList.get(1).getSchool());
