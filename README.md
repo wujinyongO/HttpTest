@@ -1,4 +1,5 @@
 HttpTest，this is an android project about http,and some http examples
+
  一个安卓http使用的例子，里面包含的功能有：
  1.使用http下载一张图片，并且显示出来
  2.使用自己的电脑搭一个简单的服务器，服务器端使用jsp
